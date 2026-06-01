@@ -52,11 +52,19 @@ MedLinkApp is a modern Android application designed to bridge the communication 
 3. Sync Gradle files.
 4. Run the `:app` module on an emulator or physical device (API 26+ recommended).
 
-## 🧪 Demo Credentials
-For testing purposes, the app comes pre-loaded with mock data and the following accounts (Password: `123` for all):
-- **Patient**: `patient`
-- **Doctor**: `doctor`
-- **Caregiver**: `caregiver`
+## 🧪 Demo Credentials & Mock Data
+The application initializes with a local database containing mock data and the following pre-configured accounts for testing. All accounts share the password **`123`**.
+
+| Role | Email / Username | AMKA (Code) | Notes |
+| :--- | :--- | :--- | :--- |
+| **Patient** | `patient` | `000000` | Pre-loaded with vitals and medication history. |
+| **Doctor** | `doctor` | `111111` | Can search for and view Patient history. |
+| **Caregiver** | `caregiver` | `222222` | Supervised the Demo Patient by default. |
+
+### How to use Mock Data:
+- Log in as the **Caregiver** to see real-time compliance and statistics for the Demo Patient.
+- Log in as the **Patient** to add new measurements or record medication intake.
+- Log in as the **Doctor** to manage appointments and view clinical history.
 
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
